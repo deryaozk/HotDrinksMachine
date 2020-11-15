@@ -1,0 +1,35 @@
+﻿@using HotDrinksMachine.Models
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+    <table class="table">
+
+        <tr>
+            <td>
+                @nameof(HotDrink.DrinkTypes.Tea)
+            </td>
+            <td>
+                @Html.ActionLink("Select", "Select", new { type = HotDrink.DrinkTypes.Tea })
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @nameof(HotDrink.DrinkTypes.Coffee)
+            </td>
+            <td>
+                @Html.ActionLink("Select", "Select", new { type = HotDrink.DrinkTypes.Coffee })
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                @nameof(HotDrink.DrinkTypes.Chocolate)
+            </td>
+            <td>
+                @Html.ActionLink("Select", "Select", new { type = HotDrink.DrinkTypes.Chocolate })
+            </td>
+        </tr>
+
+    </table>
+
